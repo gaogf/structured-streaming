@@ -1,14 +1,13 @@
 package com.gaogf;
 
 import org.apache.spark.api.java.function.FlatMapFunction;
-import org.apache.spark.rdd.JdbcRDD;
 import org.apache.spark.sql.*;
-import org.apache.spark.sql.catalyst.plans.logical.InsertIntoTable;
 import org.apache.spark.sql.streaming.StreamingQuery;
 import org.apache.spark.sql.streaming.StreamingQueryException;
-import org.apache.spark.sql.streaming.StreamingQueryListener;
 import org.apache.spark.sql.types.StructType;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.sql.*;
 import java.util.Arrays;
 
